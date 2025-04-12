@@ -1,0 +1,23 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "docx>=0.2.4",
+    "docx2pdf>=0.1.8",
+    "fastapi>=0.115.12",
+    "httpx>=0.28.1",
+    "langchain-community>=0.3.20",
+    "langchain>=0.3.22",
+    "langchain-openai>=0.3.12",
+    "pydantic>=2.11.1",
+    "python-docx-replace==0.4.4",
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.3",
+    "uvicorn>=0.34.0",
+    "langchain-core>=0.3.50",
+    "streamlit==1.40.2",
+    "python-pptx==1.0.2",
+    "instructor==1.7.0",
+]

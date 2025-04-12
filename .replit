@@ -1,0 +1,21 @@
+modules = ["python-3.12"]
+run = "python main.py"
+#run = "streamlit run front.py --server.port=${PORT:-8501} --server.enableCORS=false"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "py main.py"]
+
+[[ports]]
+localPort = 80
+externalPort = 3000
+
+[[ports]]
+localPort = 8000
+externalPort = 8000
+
+[[ports]]
+localPort = 8501
+externalPort = 80
